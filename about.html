@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script defer src="./scripts/app.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
-    <header class="cabecalho">
-      <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-link" href="index.html" target="_blank"
-          >Home</a
-        >
-        <a class="cabecalho-menu-link" href="about.html">Sobre Mim</a>
+    <header>
+      <nav class="nav-bar">
+        <!-- <header class="cabecalho"> -->
+        <!-- <nav class="cabecalho-menu"> -->
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="about.html" target="_blank" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
       </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </div>
     </header>
+    <!-- </div>
+        <a class="cabecalho-menu-link" href="index.html">Home</a>
+        <a class="cabecalho-menu-link" href="about.html" target="_blank"
+          >Sobre Mim</a
+        > -->
+    <!-- </nav> -->
+    <!-- </header> -->
     <section class="apresentacao">
       <div class="apresentacao-conteudo">
         <p class="apresentacao-conteudo-texto">
@@ -35,7 +60,8 @@
           a Copa América e a Copa do Mundo foram momentos únicos que marcaram
           minha trajetória. Agradeço a todos que sempre acreditaram em mim e
           continuo jogando com amor e respeito pelo esporte que mudou minha
-          vida.
+          vida.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+          <strong class="titulo-destaque">(CR7 É MEU PATO JAJAJJAJA)</strong>
         </p>
       </div>
       <img

@@ -3,17 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Home Portifolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/app.css" />
-    <script defer src="./scripts/app.js"></script>
+    <script defer src="app.js"></script>
   </head>
   <body>
-    <header class="cabecalho">
-      <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-link" href="index.html">Home</a>
-        <a class="cabecalho-menu-link" href="about.html" target="_blank" >Sobre Mim</a> 
+    <header>
+      <nav class="nav-bar">
+        <!-- <header class="cabecalho"> -->
+        <!-- <nav class="cabecalho-menu"> -->
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="about.html" target="_blank" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </div>
     </header>
+    <!-- </div>
+        <a class="cabecalho-menu-link" href="index.html">Home</a>
+        <a class="cabecalho-menu-link" href="about.html" target="_blank"
+          >Sobre Mim</a
+        > -->
+    <!-- </nav> -->
+    <!-- </header> -->
     <main class="apresentacao">
       <section class="apresentacao-conteudo">
         <h1 class="apresentacao-conteudo-titulo">
